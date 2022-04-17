@@ -61,6 +61,18 @@
     <Compile Include="Migrations\202204161515289_tables.designer.cs">
       <DependentUpon>202204161515289_tables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204172331208_relationships fixes.cs" />
+    <Compile Include="Migrations\202204172331208_relationships fixes.designer.cs">
+      <DependentUpon>202204172331208_relationships fixes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204172341321_test.cs" />
+    <Compile Include="Migrations\202204172341321_test.designer.cs">
+      <DependentUpon>202204172341321_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204172343208_datetime 2 datetimeoffset.cs" />
+    <Compile Include="Migrations\202204172343208_datetime 2 datetimeoffset.designer.cs">
+      <DependentUpon>202204172343208_datetime 2 datetimeoffset.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ArtExhibition.cs" />
     <Compile Include="Models\Artist.cs" />
@@ -73,6 +85,7 @@
     <Compile Include="Models\OrderToBuy.cs" />
     <Compile Include="Models\Place.cs" />
     <Compile Include="Models\Rental.cs" />
+    <Compile Include="PopulateDb.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +99,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204161515289_tables.resx">
       <DependentUpon>202204161515289_tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204172331208_relationships fixes.resx">
+      <DependentUpon>202204172331208_relationships fixes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204172341321_test.resx">
+      <DependentUpon>202204172341321_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204172343208_datetime 2 datetimeoffset.resx">
+      <DependentUpon>202204172343208_datetime 2 datetimeoffset.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

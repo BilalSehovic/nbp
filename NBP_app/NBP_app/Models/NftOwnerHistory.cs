@@ -18,7 +18,7 @@ namespace NBP_app.Models
         [Key]
         public Guid Id { get; set; }
         public string Owner { get; set; }
-        public DateTime Date { get; set; }
+        public DateTimeOffset Date { get; set; }
         public Guid NftId { get; set; }
         [ForeignKey("NftId")]
         public virtual Nft Nft { get; set; }

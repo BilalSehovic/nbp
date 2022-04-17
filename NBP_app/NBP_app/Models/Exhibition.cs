@@ -18,8 +18,8 @@ namespace NBP_app.Models
         [Key]
         public Guid Id { get; set; }
         public string NameGallery { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
+        public DateTimeOffset? StartDate { get; set; }
+        public DateTimeOffset? EndDate { get; set; }
         public Guid? PlaceId { get; set; }
         [ForeignKey("PlaceId")]
         public virtual Place Place { get; set; }

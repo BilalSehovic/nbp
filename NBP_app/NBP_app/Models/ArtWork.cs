@@ -21,7 +21,7 @@ namespace NBP_app.Models
         public int? Year { get; set; }
         public double? Price { get; set; }
         public string Description { get; set; }
-        public Guid? ArtistId { get; set; }
+        public Guid ArtistId { get; set; }
         [ForeignKey("ArtistId")]
         public virtual Artist Artist { get; set; }
         public virtual ICollection<Nft> Nfts { get; set; }

@@ -18,10 +18,12 @@ namespace NBP_app.Models
         [Key]
         public Guid Id { get; set; }
         public double? Price { get; set; }
-        public DateTime Date { get; set; }
+        public DateTimeOffset Date { get; set; }
         public Guid CustomerId { get; set; }
         [ForeignKey("CustomerId")]
         public virtual Customer Customer { get; set; }
-        public virtual ICollection<ArtWork> ArtWorks { get; set; }
+        public Guid ArtWorkId { get; set; }
+        [ForeignKey("ArtWorkId")]
+        public virtual ArtWork ArtWork { get; set; }
     }
 }

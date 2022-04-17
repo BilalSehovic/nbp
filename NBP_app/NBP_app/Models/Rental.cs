@@ -17,12 +17,14 @@ namespace NBP_app.Models
 
         [Key]
         public Guid Id { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
+        public DateTimeOffset? StartDate { get; set; }
+        public DateTimeOffset? EndDate { get; set; }
         public double? Price { get; set; }
         public Guid? CustomerId { get; set; }
         [ForeignKey("CustomerId")]
         public virtual Customer Customer { get; set; }
-        public virtual ICollection<ArtWork> ArtWorks { get; set; }
+        public Guid? ArtWorkId { get; set; }
+        [ForeignKey("ArtWorkId")]
+        public virtual ArtWork ArtWork { get; set; }
     }
 }
