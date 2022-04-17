@@ -11,22 +11,10 @@ namespace NBP_app
     {
         static void Main(string[] args)
         {
-            Populate();
+            //PopulateDb.Populate(new NbpContext());
 
-            Console.WriteLine("TEST");
+            Console.WriteLine("All good");
             Console.ReadLine();
-        }
-
-        static void Populate()
-        {
-            var context = new NbpContext();
-            PopulateDb.Populate(context);
-            //context.Artists.Add(new Artist
-            //{
-            //    FirstName = "bili",
-            //    BirthDate = new DateTime(1881, 10, 25)
-            //});
-            context.SaveChanges();
         }
     }
 }

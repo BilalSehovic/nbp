@@ -11,6 +11,9 @@ namespace NBP_app
     {
         public static void Populate(NbpContext context)
         {
+            FlushDb(context);
+            context.SaveChanges();
+
             PopulateArtists(context);
             context.SaveChanges();
             PopulateArtWorks(context);
@@ -445,6 +448,7 @@ namespace NBP_app
             context.OrderToBuys.RemoveRange(context.OrderToBuys);
             context.Nfts.RemoveRange(context.Nfts);
             context.NftOwnerHistories.RemoveRange(context.NftOwnerHistories);
+            context.SaveChanges();
         }
     }
 }
