@@ -9,6 +9,11 @@ namespace NBP_app.Models
 {
     public class Place
     {
+        public Place()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public string Address { get; set; }

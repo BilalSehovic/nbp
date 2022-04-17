@@ -10,6 +10,11 @@ namespace NBP_app.Models
 {
     public class Nft
     {
+        public Nft()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public string NftHash { get; set; }

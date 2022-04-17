@@ -10,6 +10,11 @@ namespace NBP_app.Models
 {
     public class Customer
     {
+        public Customer()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public string FirstName { get; set; }

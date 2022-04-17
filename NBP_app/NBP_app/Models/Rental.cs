@@ -10,6 +10,11 @@ namespace NBP_app.Models
 {
     public class Rental
     {
+        public Rental()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public DateTime? StartDate { get; set; }

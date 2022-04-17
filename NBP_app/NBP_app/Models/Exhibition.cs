@@ -10,6 +10,11 @@ namespace NBP_app.Models
 {
     public class Exhibition
     {
+        public Exhibition()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public string NameGallery { get; set; }

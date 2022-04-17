@@ -10,6 +10,11 @@ namespace NBP_app.Models
 {
     public class NftOwnerHistory
     {
+        public NftOwnerHistory()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public string Owner { get; set; }

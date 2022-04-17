@@ -10,6 +10,11 @@ namespace NBP_app.Models
 {
     public class OrderToBuy
     {
+        public OrderToBuy()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public double? Price { get; set; }

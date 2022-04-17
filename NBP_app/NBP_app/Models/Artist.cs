@@ -10,6 +10,11 @@ namespace NBP_app.Models
 {
     public class Artist
     {
+        public Artist()
+        {
+            Id = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
         public string FirstName { get; set; }
