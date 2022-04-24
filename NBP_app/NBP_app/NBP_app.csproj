@@ -85,7 +85,11 @@
     <Compile Include="Models\OrderToBuy.cs" />
     <Compile Include="Models\Place.cs" />
     <Compile Include="Models\Rental.cs" />
-    <Compile Include="PopulateDb.cs" />
+    <Compile Include="PopulateDb\PopulateArtists.cs" />
+    <Compile Include="PopulateDb\PopulateArtWorks.cs" />
+    <Compile Include="PopulateDb\PopulateDb.cs" />
+    <Compile Include="PopulateDb\PopulateOthers.cs" />
+    <Compile Include="PopulateDb\PopulateRentals.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
