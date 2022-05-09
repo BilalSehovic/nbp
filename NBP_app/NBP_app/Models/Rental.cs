@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NBP_app.Models
 {
-    public class Rental
+    public class Rental : BackupEntity
     {
         public Rental()
         {

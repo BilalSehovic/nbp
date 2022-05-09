@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NBP_app.Models
 {
-    public class ArtWork
+    public class ArtWork : BackupEntity
     {
         public ArtWork()
         {
