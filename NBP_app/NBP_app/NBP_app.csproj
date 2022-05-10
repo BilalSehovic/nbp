@@ -81,12 +81,22 @@
     <Compile Include="Migrations\202205100832529_artist_audit.designer.cs">
       <DependentUpon>202205100832529_artist_audit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205101946073_artist_audit_2.cs" />
+    <Compile Include="Migrations\202205101946073_artist_audit_2.designer.cs">
+      <DependentUpon>202205101946073_artist_audit_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205102041372_audit_all.cs" />
+    <Compile Include="Migrations\202205102041372_audit_all.designer.cs">
+      <DependentUpon>202205102041372_audit_all.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ArtExhibition.cs" />
     <Compile Include="Models\Artists\Artist.cs" />
     <Compile Include="Models\Artists\ArtistAudit.cs" />
     <Compile Include="Models\Artists\ArtistBase.cs" />
-    <Compile Include="Models\ArtWork.cs" />
+    <Compile Include="Models\ArtWorks\ArtWork.cs" />
+    <Compile Include="Models\ArtWorks\ArtWorkAudit.cs" />
+    <Compile Include="Models\ArtWorks\ArtWorkBase.cs" />
     <Compile Include="Models\BackupEntity.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Exhibition.cs" />
@@ -95,7 +105,9 @@
     <Compile Include="Models\NftOwnerHistory.cs" />
     <Compile Include="Models\OrderToBuy.cs" />
     <Compile Include="Models\Place.cs" />
-    <Compile Include="Models\Rental.cs" />
+    <Compile Include="Models\Rentals\Rental.cs" />
+    <Compile Include="Models\Rentals\RentalAudit.cs" />
+    <Compile Include="Models\Rentals\RentalBase.cs" />
     <Compile Include="PopulateDb\PopulateArtists.cs" />
     <Compile Include="PopulateDb\PopulateArtWorks.cs" />
     <Compile Include="PopulateDb\PopulateDb.cs" />
@@ -129,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205100832529_artist_audit.resx">
       <DependentUpon>202205100832529_artist_audit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205101946073_artist_audit_2.resx">
+      <DependentUpon>202205101946073_artist_audit_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205102041372_audit_all.resx">
+      <DependentUpon>202205102041372_audit_all.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

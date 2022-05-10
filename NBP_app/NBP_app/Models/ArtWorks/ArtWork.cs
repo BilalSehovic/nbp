@@ -1,4 +1,5 @@
 ﻿using NBP_app.Models.Artists;
+using NBP_app.Models.Rentals;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,21 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NBP_app.Models
+namespace NBP_app.Models.ArtWorks
 {
-    public class ArtWork : BackupEntity
+    public class ArtWork : ArtWorkBase
     {
-        public ArtWork()
-        {
-            Id = Guid.NewGuid();
-        }
-
-        [Key]
-        public Guid Id { get; set; }
-        public string Title { get; set; }
-        public int? Year { get; set; }
-        public double? Price { get; set; }
-        public string Description { get; set; }
         public Guid ArtistId { get; set; }
         [ForeignKey("ArtistId")]
         public virtual Artist Artist { get; set; }

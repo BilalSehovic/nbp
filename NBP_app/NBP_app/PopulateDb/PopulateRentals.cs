@@ -1,4 +1,5 @@
 ﻿using NBP_app.Models;
+using NBP_app.Models.Rentals;
 using System;
 using System.Collections.Generic;
 using System.Linq;

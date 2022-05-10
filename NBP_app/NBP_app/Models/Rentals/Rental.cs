@@ -7,21 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NBP_app.Models
+namespace NBP_app.Models.Rentals
 {
-    public class Nft
+    public class Rental : RentalBase
     {
-        public Nft()
-        {
-            Id = Guid.NewGuid();
-        }
-
-        [Key]
-        public Guid Id { get; set; }
-        public string NftHash { get; set; }
-        public Guid ArtWorkId { get; set; }
+        public Guid? CustomerId { get; set; }
+        [ForeignKey("CustomerId")]
+        public virtual Customer Customer { get; set; }
+        public Guid? ArtWorkId { get; set; }
         [ForeignKey("ArtWorkId")]
         public virtual ArtWork ArtWork { get; set; }
-        public virtual ICollection<NftOwnerHistory> NftOwnerHistories { get; set; }
     }
 }
