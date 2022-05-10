@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NBP_app.Models.Artists;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace NBP_app.Models
 
         public DbSet<ArtExhibition> ArtExhibitions { get; set; }
         public DbSet<Artist> Artists { get; set; }
+        public DbSet<ArtistAudit> ArtistAudits { get; set; }
         public DbSet<ArtWork> ArtWorks { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Exhibition> Exhibitions { get; set; }

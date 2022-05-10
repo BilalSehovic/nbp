@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NBP_app.Models
+namespace NBP_app.Models.Artists
 {
-    public class Artist : BackupEntity
+    public abstract class ArtistBase : BackupEntity
     {
-        public Artist()
+        public ArtistBase()
         {
             Id = Guid.NewGuid();
         }
@@ -23,9 +22,5 @@ namespace NBP_app.Models
         public string BirthPlace { get; set; }
         public string PhoneNumber { get; set; }
         public string Style { get; set; }
-        public Guid? PlaceId { get; set; }
-        [ForeignKey("PlaceId")]
-        public virtual Place Place { get; set; }
-        public virtual ICollection<ArtWork> ArtWorks { get; set; }
     }
 }

@@ -77,9 +77,15 @@
     <Compile Include="Migrations\202205010655533_abstract backup entity.designer.cs">
       <DependentUpon>202205010655533_abstract backup entity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205100832529_artist_audit.cs" />
+    <Compile Include="Migrations\202205100832529_artist_audit.designer.cs">
+      <DependentUpon>202205100832529_artist_audit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ArtExhibition.cs" />
-    <Compile Include="Models\Artist.cs" />
+    <Compile Include="Models\Artists\Artist.cs" />
+    <Compile Include="Models\Artists\ArtistAudit.cs" />
+    <Compile Include="Models\Artists\ArtistBase.cs" />
     <Compile Include="Models\ArtWork.cs" />
     <Compile Include="Models\BackupEntity.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205010655533_abstract backup entity.resx">
       <DependentUpon>202205010655533_abstract backup entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205100832529_artist_audit.resx">
+      <DependentUpon>202205100832529_artist_audit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
